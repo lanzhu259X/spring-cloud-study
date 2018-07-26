@@ -1,8 +1,8 @@
 server:
-  port: 8721
+  port: 8722
 spring:
   application:
-    name: server-demo-a
+    name: server-user-b
   cloud:
     config:
       discovery:

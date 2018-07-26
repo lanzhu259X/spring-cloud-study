@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-demo-a</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>service-user-a</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -35,6 +35,5 @@
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>

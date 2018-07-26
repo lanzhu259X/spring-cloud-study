@@ -12,8 +12,8 @@
     <artifactId>service-user</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>service-demo-a</module>
         <module>service-user-b</module>
+        <module>service-user-a</module>
     </modules>
 
 
