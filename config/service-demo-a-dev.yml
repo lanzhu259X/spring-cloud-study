@@ -1,0 +1,16 @@
+info:
+  title: 服务提供者A
+  desc: '测试服务提供配置信息'
+  number-value1: 1
+  number-value2: 10.1
+  boolean-value: true
+  null-value: ~
+  object-value:
+    name: nameA
+    value: valueA
+  list-value:
+    - item-1
+    - item-2
+  date-value: 2018-07-26
+  time-value: 2018-87-26 17:09:10
+

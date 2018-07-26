@@ -1,0 +1,16 @@
+server:
+  port: 8721
+spring:
+  application:
+    name: server-demo-a
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+        profile: dev
+        label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-eureka:8701/eureka/

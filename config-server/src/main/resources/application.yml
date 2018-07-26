@@ -1,0 +1,18 @@
+server:
+  port: 8711
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lanzhu259X/spring-cloud-study/
+          search-paths: config
+          username: lanzhu259X
+          password: xxxx
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-eureka:8701/eureka/
