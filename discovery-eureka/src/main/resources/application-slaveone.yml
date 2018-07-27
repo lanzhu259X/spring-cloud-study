@@ -1,0 +1,6 @@
+eureka:
+  instance:
+    hostname: discovery-eureka-slaveone
+  client:
+    service-url:
+      defaultZone: http://discovery-eureka-master:8761/eureka/
