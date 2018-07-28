@@ -11,8 +11,6 @@ spring:
           search-paths: config
           username: lanzhu259X
           password: xxxx
-  profiles:
-    active: master
 
 eureka:
   client:

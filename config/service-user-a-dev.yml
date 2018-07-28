@@ -11,6 +11,7 @@ info:
   list-value:
     - item-1
     - item-2
+  arry-value: 1,2,3
   date-value: 2018-07-26
   time-value: 2018-87-26 17:09:10
 
