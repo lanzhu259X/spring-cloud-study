@@ -1,6 +1,6 @@
 info:
-  title: 服务提供者A
-  desc: '测试服务提供配置信息'
+  title: 服务提供者AAAA
+  desc: '测试服务提供配置信息AAAA'
   number-value1: 1
   number-value2: 10.1
   boolean-value: true

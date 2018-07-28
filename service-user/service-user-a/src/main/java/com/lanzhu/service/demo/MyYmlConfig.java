@@ -1,8 +1,11 @@
 package com.lanzhu.service.demo;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -20,8 +23,8 @@ public class MyYmlConfig {
     private Map<String, String> objectValue;
     private List<String> listValue;
     private Integer[] arryValue;
-    private Date dateValue;
-    private Date timeValue;
+    private String dateValue;
+    private String timeValue;
 
     public String getTitle() {
         return title;
@@ -96,18 +99,32 @@ public class MyYmlConfig {
     }
 
     public Date getDateValue() {
-        return dateValue;
+        if (StringUtils.isNotEmpty(this.dateValue)) {
+            try {
+                return new SimpleDateFormat("yyyy-MM-dd").parse(this.dateValue);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 
-    public void setDateValue(Date dateValue) {
+    public void setDateValue(String dateValue) {
         this.dateValue = dateValue;
     }
 
     public Date getTimeValue() {
-        return timeValue;
+        if (StringUtils.isNotEmpty(this.timeValue)) {
+            try {
+                return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(this.timeValue);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 
-    public void setTimeValue(Date timeValue) {
+    public void setTimeValue(String timeValue) {
         this.timeValue = timeValue;
     }
 }

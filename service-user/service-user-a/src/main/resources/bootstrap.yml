@@ -2,7 +2,7 @@ server:
   port: 8721
 spring:
   application:
-    name: server-user-a
+    name: service-user-a
   cloud:
     config:
       profile: dev
@@ -13,4 +13,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://discovery-eureka-master:8761/eureka/,http://discovery-eureka-slaveone:8761/eureka/
+      defaultZone: http://discovery-eureka:8761/eureka/

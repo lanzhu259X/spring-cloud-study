@@ -2,15 +2,16 @@ server:
   port: 8722
 spring:
   application:
-    name: server-user-b
+    name: service-user-b
   cloud:
     config:
+      profile: dev
+      label: master
       discovery:
         enabled: true
         serviceId: config-server
-        profile: dev
-        label: master
+
 eureka:
   client:
     service-url:
-      defaultZone: http://discovery-eureka-master:8761/eureka/,http://discovery-eureka-slaveone:8761/eureka/
+      defaultZone: http://discovery-eureka:8761/eureka/
