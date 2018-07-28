@@ -14,3 +14,11 @@ echo 'copy ./service-user/service-user-b/target/service-user-b-1.0.0.jar to /d/d
 
 cp ./service-user/service-user-b/target/service-user-b-1.0.0.jar /d/dockerdata/workspace/webapp/spring-cloud-study/service-user-b.jar
 
+echo 'copy ./service-user/service-user-b/target/service-user-b-1.0.0.jar to /d/dockerdata/workspace/webapp/spring-cloud-study/'
+
+cp ./consumer-demo/consumer-ribbon/target/consumer-ribbon-1.0.0.jar /d/dockerdata/workspace/webapp/spring-cloud-study/consumer-ribbon.jar
+
+
+cp ./consumer-demo/consumer-feign/target/consumer-feign-1.0.0.jar /d/dockerdata/workspace/webapp/spring-cloud-study/consumer-feign.jar
+
+

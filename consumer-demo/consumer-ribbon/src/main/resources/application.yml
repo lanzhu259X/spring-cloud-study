@@ -1,0 +1,10 @@
+server:
+  port: 8731
+spring:
+  application:
+    name: consumer-ribbon
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-eureka:8761/eureka/

@@ -1,0 +1,10 @@
+server:
+  port: 8732
+spring:
+  application:
+    name: consumer-feign
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-eureka:8761/eureka/
