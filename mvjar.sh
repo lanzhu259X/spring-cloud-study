@@ -1,3 +1,5 @@
+## 把每个服务的jar包移动到对应的docker启动脚本的位置，方便docker构建容器启动实例。
+
 echo 'copy ./discovery-eureka/target/discovery-eureka-1.0.0.jar to /d/dockerdata/workspace/webapp/spring-cloud-study/'
 
 cp ./discovery-eureka/target/discovery-eureka-1.0.0.jar /d/dockerdata/workspace/webapp/spring-cloud-study/discovery-eureka.jar
