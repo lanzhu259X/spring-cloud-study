@@ -17,6 +17,7 @@
         <module>service-user</module>
         <module>config-server</module>
         <module>consumer-demo</module>
+        <module>api-gateway</module>
     </modules>
 
     <parent>

@@ -1,0 +1,15 @@
+server:
+  port: 8741
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-eureka:8761/eureka/
+zuul:
+  routes:
+    config:
+      path: /config/**
+      service-id: consumer-feign
+  ignored-services: service-user-a

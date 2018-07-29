@@ -21,4 +21,4 @@ cp ./consumer-demo/consumer-ribbon/target/consumer-ribbon-1.0.0.jar /d/dockerdat
 
 cp ./consumer-demo/consumer-feign/target/consumer-feign-1.0.0.jar /d/dockerdata/workspace/webapp/spring-cloud-study/consumer-feign.jar
 
-
+cp ./api-gateway/target/api-gateway-1.0.0.jar /d/dockerdata/workspace/webapp/spring-cloud-study/api-gateway.jar
